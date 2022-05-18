@@ -1,8 +1,19 @@
 // let loadWepbage = function(){
 //     return console.log('I am loading')
-// }
+
 
 export function loadWebpage(){
+    
+    try{
+        let pageDelete = document.querySelector('.page')
+        pageDelete.remove()
+    }
+    catch(err){
+        console.log(err)
+    }
+    
+        
+    
     // header //
     let contentAppend = document.getElementById('content')
     
@@ -82,12 +93,15 @@ export function loadWebpage(){
     navAppend.appendChild(navContent)
 
     let navh1 = document.createElement('h2')
+    navh1.classList.add('main')
     navh1.textContent = 'Main'
 
     let navh2 = document.createElement('h2')
+    navh2.classList.add('menu')
     navh2.textContent = 'Menu'
 
     let navh3 = document.createElement('h2')
+    navh3.classList.add('Info')
     navh3.textContent = 'Info'
 
     let navContentAppend = document.querySelector('.nav-content')
