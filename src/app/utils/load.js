@@ -71,6 +71,7 @@ export function loadWebpage(){
     belowAppend.appendChild(belowp2)
     // header //
 
+    // nav //
     let nav = document.createElement('div')
     nav.classList.add('nav')
     pageAppend.appendChild(nav)
@@ -93,9 +94,41 @@ export function loadWebpage(){
     navContentAppend.appendChild(navh1)
     navContentAppend.appendChild(navh2)
     navContentAppend.appendChild(navh3)
+    // nav //
 
+    //body-content//
+    let bodyContent = document.createElement('div')
+    bodyContent.classList.add('body-content')
+    pageAppend.appendChild(bodyContent)
 
+    let bodySection = document.createElement('div')
+    bodySection.classList.add('body-section')
 
+    let bodyContentAppend = document.querySelector('.body-content')
+    bodyContent.appendChild(bodySection)
+
+    let bodySectionImg = document.createElement('img')
+    bodySectionImg.setAttribute('src', "/src/manpuku.jpeg")
+    bodySectionImg.setAttribute('alt', "restaurant storefront")
+    bodySectionImg.setAttribute('class', "storefront-img")
+    
+    let bodySectionAppend = document.querySelector('.body-section')
+    bodySectionAppend.appendChild(bodySectionImg)
+
+    let mainContentText = document.createElement('div')
+    mainContentText.classList.add('main-content-text')
+
+    let bodySectionp1 = document.createElement('p')
+    bodySectionp1.textContent = "OUR STOREFRONT"
+    let bodySectionp2 = document.createElement('p')
+    bodySectionp2.textContent = "We are a restaurant in Toronto bringing the most authentic Japanese Food to the City"
+    let bodySectionp3 = document.createElement('p')
+    bodySectionp3.textContent = "写真家の川島小鳥主宰のブックレーベルpiyo piyo pressの出版２タイトル「（世界）² / 川島小鳥x仲野太賀」「花とイルカとユニコーン / 小橋陽介」とオリジナルトートバッグが再入荷しました。 以下関連商品お買い上げの方に、小橋陽介がジョウビタキを描いたpiyo piyo press（世界）²　特製ステッカーを差し上げます。"
+
+    mainContentText.appendChild(bodySectionp1)
+    mainContentText.appendChild(bodySectionp2)
+    mainContentText.appendChild(bodySectionp3)
+    bodySectionAppend.appendChild(mainContentText)
 
 
 
