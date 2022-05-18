@@ -1,8 +1,9 @@
 
 
 export function loadMenu(){
-    
-    console.log('loading')
+
+
+    console.log('this is menu')
     let bodySectionDelete = document.querySelector('.body-section')
     console.log(bodySectionDelete)
     bodySectionDelete.remove()

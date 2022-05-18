@@ -3,7 +3,7 @@
 
 
 export function loadWebpage(){
-    
+    console.log('this is loadwebpage')
     try{
         let pageDelete = document.querySelector('.page')
         pageDelete.remove()
@@ -143,11 +143,4 @@ export function loadWebpage(){
     mainContentText.appendChild(bodySectionp2)
     mainContentText.appendChild(bodySectionp3)
     bodySectionAppend.appendChild(mainContentText)
-
-
-
-
-
-
-    return console.log('I am loading')
 }
