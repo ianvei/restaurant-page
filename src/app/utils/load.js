@@ -71,7 +71,36 @@ export function loadWebpage(){
     belowAppend.appendChild(belowp2)
     // header //
 
-    
-    return console.log('I am loading')
+    let nav = document.createElement('div')
+    nav.classList.add('nav')
+    pageAppend.appendChild(nav)
 
+    let navAppend = document.querySelector('.nav')
+    let navContent = document.createElement('div')
+    navContent.classList.add('nav-content')
+    navAppend.appendChild(navContent)
+
+    let navh1 = document.createElement('h2')
+    navh1.textContent = 'Main'
+
+    let navh2 = document.createElement('h2')
+    navh2.textContent = 'Menu'
+
+    let navh3 = document.createElement('h2')
+    navh3.textContent = 'Info'
+
+    let navContentAppend = document.querySelector('.nav-content')
+    navContentAppend.appendChild(navh1)
+    navContentAppend.appendChild(navh2)
+    navContentAppend.appendChild(navh3)
+
+
+
+
+
+
+
+
+
+    return console.log('I am loading')
 }
