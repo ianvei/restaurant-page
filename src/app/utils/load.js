@@ -1,6 +1,7 @@
 // let loadWepbage = function(){
 //     return console.log('I am loading')
-
+import { loadMenu } from './menu.js'
+import { info } from './contact.js'
 
 export function loadWebpage(){
     console.log('this is loadwebpage')
@@ -143,4 +144,19 @@ export function loadWebpage(){
     mainContentText.appendChild(bodySectionp2)
     mainContentText.appendChild(bodySectionp3)
     bodySectionAppend.appendChild(mainContentText)
+
+    // section event listeners //
+    let loadListener = document.querySelector('.main')
+    
+    let infoListener = document.querySelector('.Info')
+
+    // const info1 = function(){
+    //     console.log('info')
+    // }
+    
+    loadListener.addEventListener('click', loadWebpage)
+    infoListener.addEventListener('click', info)
+
+    let menuListener = document.querySelector('.menu')
+    menuListener.addEventListener('click', loadMenu)
 }

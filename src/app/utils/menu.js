@@ -1,7 +1,8 @@
 
 
 export function loadMenu(){
-
+    let menuListener = document.querySelector('.menu')
+    menuListener.addEventListener('click', loadMenu)
 
     console.log('this is menu')
     let bodySectionDelete = document.querySelector('.body-section')
@@ -76,4 +77,6 @@ export function loadMenu(){
     menuItem4.appendChild(food4)
     menuItem4.appendChild(price4)
 
+    
+    
 }
