@@ -123,7 +123,7 @@ export function loadWebpage(){
     bodyContent.appendChild(bodySection)
 
     let bodySectionImg = document.createElement('img')
-    bodySectionImg.setAttribute('src', "/src/manpuku.jpeg")
+    bodySectionImg.setAttribute('src', "manpuku.jpeg")
     bodySectionImg.setAttribute('alt', "restaurant storefront")
     bodySectionImg.setAttribute('class', "storefront-img")
     
